@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+
+
+.container{
+    display: grid;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+ 
+
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.container__heading{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(144 94 150);
+}
+
+.weather__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container__input{
+    background: #905E96;
+    text-align: center;
+    width: 71%;
+    border-radius: 7px;
+
+
+}
+
+.weather__input{
+    margin-top: 2rem;
+    width: 80%;
+    height: 3rem;
+    outline: none;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.buttons__container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.weatherdata__container{
+    display: flex;
+    justify-content: center;
+}
+
+.weather__information{
+    background: #D58BDD;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 12px;
+
+}
+
+.data__heading{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.list__component{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.data__list{
+    display: grid;
+    gap: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .container__heading{
+        text-align: center;
+
+    }
+
+    .container__input{
+        width: 95%;
+    }
+
+    Button{
+        padding: 5px;
+    }
+
+    .weather__information{
+        width: 70%;
+    }
+}
