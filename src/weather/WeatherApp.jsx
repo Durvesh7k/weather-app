@@ -39,7 +39,7 @@ const WeatherApp = () => {
                                 setButtonStyle('block');
                                 async function getUser() {
                                     try {
-                                        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=42b46c2b02b2fbe3d4648a51cb816c9c&units=metric`);
+                                        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid={process.env.API_ID}&units=metric`);
                                         setTemp(response.data.main.temp);
                                         setHumidity(response.data.main.humidity);
                                         setPresure(response.data.main.pressure);
