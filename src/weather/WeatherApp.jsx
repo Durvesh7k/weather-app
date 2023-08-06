@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import './WeathrApp.css';
-import Button from '@mui/material/Button';
 
 
 const WeatherApp = () => {
@@ -36,7 +35,7 @@ const WeatherApp = () => {
                         <br />
 
                         <div className='buttons__container'>
-                            <Button variant="contained" onClick={() => {
+                            <button className='button' variant="contained" onClick={() => {
                                 setButtonStyle('block');
                                 async function getUser() {
                                     try {
@@ -53,13 +52,13 @@ const WeatherApp = () => {
                         
                                 getUser();
 
-                            }}>get the weather Data</Button>
+                            }}>Get the weather Data</button>
 
-                            <Button variant="contained" onClick={() => {
+                            <button className='button' variant="contained" onClick={() => {
                                 setButtonStyle('none');
                                 setcityName('');
 
-                            }}>reset</Button>
+                            }}>reset</button>
                         </div>
 
 

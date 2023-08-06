@@ -7,9 +7,8 @@
     display: grid;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
- 
-
 }
+
 ::-webkit-scrollbar {
     display: none;
   }
@@ -18,7 +17,7 @@
     margin-top: 2rem;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
-    color: rgb(144 94 150);
+    color: white;
 }
 
 .weather__container{
@@ -28,7 +27,7 @@
 }
 
 .container__input{
-    background: #905E96;
+    background: #272829;
     text-align: center;
     width: 71%;
     border-radius: 7px;
@@ -47,6 +46,7 @@
     font-family: inherit;
     font-size: 18px;
     padding: 8px;
+    font-weight: 700;
 }
 
 .buttons__container{
@@ -62,11 +62,12 @@
 }
 
 .weather__information{
-    background: #D58BDD;
+    background: #272829;
     margin: 2rem;
     padding: 1rem;
     width: 50%;
     border-radius: 12px;
+    color: white;
 
 }
 
@@ -84,6 +85,18 @@
 .data__list{
     display: grid;
     gap: 10px;
+}
+
+.button{
+    background: darkslategrey;
+    color: white;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 600px){
